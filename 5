@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x;
+	cout << "Vvedite x" << endl;
+	cin >> x;
+	int A = x / 1000;
+	int B = (x / 100) % 10;
+	int C = (x / 10) % 10;
+	int D = (x % 10);
+	if (A == D && B == C)  {
+		cout << "udovletvoryaet" << endl;
+	}
+	else {
+		cout << "ne udovletvoryaet" << endl;
+	}
+	return 0;
+}
