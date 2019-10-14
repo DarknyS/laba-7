@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x;
+	cout << "Vvedite x" << endl;
+	cin >> x;
+	int A = x / 100;
+	int C = x % 10;
+	int B = (x / 10) - 10 * A;
+	if ((A < B && B < C) ||(A>B && B>C)) {
+		cout << "udovletvoryaet" << endl;
+	}
+	else {
+		cout << "ne udovletvoryaet" << endl;
+	}
+	return 0;
+}
